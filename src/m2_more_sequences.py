@@ -247,9 +247,15 @@ def number_of_stutters(s):
        :type s: str
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    #  The 'Looking in two places at once' pattern
+    total = 0
+    for k in range(len(s) - 1):
+        if s[k - 1] == s[k]:
+            total = total + 1
+    return total
 
 
 def run_test_is_palindrome():
