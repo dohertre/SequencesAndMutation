@@ -106,12 +106,13 @@ def shortest_string(strings):
     # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
-    # MAX/MIN pattern
+    #  MAX/MIN pattern
     k_for_min = 0
     for k in range(1, len(strings)):
         if len(strings[k]) < len(strings[k_for_min]):
             k_for_min = k
     return strings[k_for_min]
+
 
 def run_test_index_of_largest_number():
     """ Tests the   index_of_largest_number   function. """
@@ -185,9 +186,15 @@ def index_of_largest_number(numbers, n):
 
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    #  MAX/MIN Pattern
+    k_for_max = 0
+    for k in range(1, n):
+        if numbers[k] > numbers[k_for_max]:
+            k_for_max = k
+    return k_for_max
 
 
 # ----------------------------------------------------------------------
