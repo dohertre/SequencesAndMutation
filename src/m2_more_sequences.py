@@ -326,7 +326,7 @@ def is_palindrome(s):
       :type s: str
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     ####################################################################
@@ -335,7 +335,10 @@ def is_palindrome(s):
     #   above are particularly good examples to work by hand.
     ####################################################################
     # ------------------------------------------------------------------
-
+    #  The 'Looking at two places at once' pattern
+    if s == s[::-1]:
+        return True
+    return False
 
 # ----------------------------------------------------------------------
 # Some problems loop (iterate) through two or more sequences
